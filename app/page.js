@@ -67,28 +67,27 @@ const designs = [
 const services = [
   {
     title: "Manicures",
-    desc: "Shape, cuticle care, and polish — the everyday reset that makes hands feel finished.",
+    desc: "Traditional, Signature Spa, and Shellac/no-chip options — filing, shaping, cuticle care, and a hand & arm massage.",
   },
   {
-    title: "Nail Art",
-    desc: "Hand-painted detail, ombré, marble, and chrome. This is where the gallery designs come from.",
+    title: "Pedicures",
+    desc: "Spa Pedicure with a relaxing soak and hot towels, or the Signature Spa Pedicure with exfoliation and a deep moisturizing mask.",
   },
   {
-    title: "Gel & Dip",
-    desc: "Longer-wearing color and strength for sets that need to hold up for weeks, not days.",
+    title: "Full Sets & Fills",
+    desc: "Acrylic, Pink & White, Pink & White with Gel, Gel Powder, and Liquid Gel — plus fills, repairs, and polish changes.",
   },
 ];
 
 const promotions = [
-  { label: "First set with a friend", value: "20% off" },
-  { label: "Refill within 3 weeks", value: "$5 off" },
-  { label: "Birthday month", value: "One free add-on" },
+  { label: "Manicure + Pedicure combo (Mon–Wed)", value: "$40" },
+  { label: "Free Wi-Fi in salon", value: "Always on" },
 ];
 
 const hours = [
-  { day: "Mon – Fri", time: "10:00am – 8:00pm" },
+  { day: "Mon – Fri", time: "10:00am – 7:00pm" },
   { day: "Saturday", time: "9:00am – 6:00pm" },
-  { day: "Sunday", time: "11:00am – 5:00pm" },
+  { day: "Sunday", time: "12:00pm – 5:00pm" },
 ];
 
 export default function Home() {
@@ -97,7 +96,7 @@ export default function Home() {
       <div className="nav-outer">
         <nav className="nav container">
           <div className="wordmark">
-            nail<span>studio</span>
+            LA<span>Nails</span>
           </div>
           <ul className="nav-links">
             <li><a href="#services">Services</a></li>
@@ -112,14 +111,14 @@ export default function Home() {
       <div className="hero-outer">
         <div className="hero container">
           <div>
-            <div className="hero-eyebrow">A personal nail art practice</div>
+            <div className="hero-eyebrow">LA Nails · Grand Ave, St. Paul</div>
             <h1>
-              Every set, <em>done with care.</em>
+              Professional nail care, <em>done with care.</em>
             </h1>
             <p>
-              A running collection of the designs I make and love — hand-painted
-              detail, considered color, and finishes worth showing off. Take a
-              look through the gallery or reach out to book a set.
+              We strive to give every client the finest, most personalized
+              nail care in a comfortable setting. Take a look through the
+              gallery or reach out to book a set.
             </p>
             <div className="hero-actions">
               <a href="#contact" className="btn-primary">Book a set</a>
@@ -136,12 +135,12 @@ export default function Home() {
           <div>
             <p className="section-eyebrow">What makes it different</p>
             <h2 style={{ fontFamily: "Fraunces, serif", fontWeight: 500, fontSize: 28, margin: 0 }}>
-              Every set is a statement, not just a service.
+              Our promise: professional, comprehensive nail care.
             </h2>
             <ul className="about-list">
-              <li>Hand-painted detail, not stamped or stenciled shortcuts.</li>
-              <li>Color and shape planned around your hands, not a fixed menu.</li>
-              <li>Clean, calm process from prep to top coat.</li>
+              <li>Skilled, professional staff you can count on.</li>
+              <li>A comfortable salon experience from start to finish.</li>
+              <li>Personalized service, every visit.</li>
             </ul>
           </div>
         </div>
@@ -206,10 +205,9 @@ export default function Home() {
         <div className="container">
           <div className="promo-banner">
             <div>
-              <h2>Bring a friend, save on both sets.</h2>
+              <h2>Current specials</h2>
               <p>
-                A few standing offers for repeat visits and referrals — ask
-                about these when you book.
+                A couple of standing offers — ask about these when you book.
               </p>
             </div>
             <div className="promo-list">
@@ -236,9 +234,8 @@ export default function Home() {
             <div className="contact-block">
               <h3>Reach out</h3>
               <ul className="contact-rows">
-                <li><span>Email</span><span>hello@nailstudio.com</span></li>
-                <li><span>Phone</span><span>(555) 010-0100</span></li>
-                <li><span>Instagram</span><span>@nailstudio</span></li>
+                <li><span>Phone</span><span>651-293-1368</span></li>
+                <li><span>Address</span><span>1102 Grand Ave, St. Paul, MN 55105</span></li>
               </ul>
             </div>
             <div className="contact-block">
@@ -255,8 +252,8 @@ export default function Home() {
 
       <div className="footer-outer">
         <footer className="footer container">
-          <span>© {new Date().getFullYear()} nailstudio</span>
-          <span>Built for personal use</span>
+          <span>© {new Date().getFullYear()} LA Nails</span>
+          <span>1102 Grand Ave, St. Paul, MN</span>
         </footer>
       </div>
     </>
