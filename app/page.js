@@ -1,66 +1,23 @@
 const designs = [
   {
-    title: "Chrome Fade",
-    tag: "Chrome",
-    dot: "#c9a15a",
-    swatch:
-      "linear-gradient(135deg, #e8e4dd 0%, #b9b2a3 30%, #8c8577 55%, #d8d2c6 78%, #f2efe9 100%)",
+    title: "Design 1",
+    tag: "Gallery",
+    image: "/348s.jpg",
   },
   {
-    title: "Wine Ombré",
-    tag: "Ombré",
-    dot: "#8c2f39",
-    swatch:
-      "linear-gradient(160deg, #f4e9e3 0%, #d98b8f 35%, #a83b46 65%, #6e1f28 100%)",
+    title: "Design 2",
+    tag: "Gallery",
+    image: "/348s%20(1).jpg",
   },
   {
-    title: "Pressed Florals",
-    tag: "Floral",
-    dot: "#7a8c5c",
-    swatch:
-      "radial-gradient(circle at 30% 30%, #f6efe4 0%, #f6efe4 18%, transparent 19%), radial-gradient(circle at 65% 55%, #d98b8f 0%, #d98b8f 14%, transparent 15%), radial-gradient(circle at 45% 75%, #c9a15a 0%, #c9a15a 10%, transparent 11%), #eee6da",
+    title: "Design 3",
+    tag: "Gallery",
+    image: "/348s%20(2).jpg",
   },
   {
-    title: "Marble Vein",
-    tag: "Marble",
-    dot: "#2b1b22",
-    swatch:
-      "linear-gradient(120deg, #f4f1ea 0%, #e4ddd0 40%, #2b1b22 41%, #f4f1ea 42%, #f4f1ea 70%, #8c2f39 71%, #f4f1ea 72%)",
-  },
-  {
-    title: "Terracotta Tips",
-    tag: "French",
-    dot: "#b25b3a",
-    swatch:
-      "linear-gradient(to bottom, #f6efe4 0%, #f6efe4 68%, #b25b3a 69%, #b25b3a 100%)",
-  },
-  {
-    title: "Gilded Line Art",
-    tag: "Minimal",
-    dot: "#c9a15a",
-    swatch:
-      "repeating-linear-gradient(115deg, #f6efe4 0px, #f6efe4 26px, #c9a15a 27px, #c9a15a 29px)",
-  },
-  {
-    title: "Plum Glitter",
-    tag: "Glitter",
-    dot: "#5c2740",
-    swatch:
-      "radial-gradient(circle at 20% 20%, rgba(255,255,255,0.6) 0 2px, transparent 3px), radial-gradient(circle at 50% 60%, rgba(255,255,255,0.5) 0 2px, transparent 3px), radial-gradient(circle at 75% 30%, rgba(255,255,255,0.5) 0 2px, transparent 3px), radial-gradient(circle at 35% 80%, rgba(255,255,255,0.4) 0 2px, transparent 3px), linear-gradient(160deg, #5c2740, #2b1b22)",
-  },
-  {
-    title: "Sage Negative Space",
-    tag: "Minimal",
-    dot: "#7a8c5c",
-    swatch:
-      "linear-gradient(to right, #f6efe4 0%, #f6efe4 55%, #7a8c5c 56%, #7a8c5c 60%, #f6efe4 61%)",
-  },
-  {
-    title: "Gold Leaf Tip",
-    tag: "Accent",
-    dot: "#c9a15a",
-    swatch:
-      "linear-gradient(to bottom, #f6efe4 0%, #f6efe4 78%, #c9a15a 79%, #e8c98a 100%)",
+    title: "Design 4",
+    tag: "Gallery",
+    image: "/348s%20(3).jpg",
   },
 ];
 
@@ -180,8 +137,17 @@ export default function Home() {
           <div className="grid">
             {designs.map((d) => (
               <div className="card" key={d.title}>
-                <div className="card-swatch" style={{ background: d.swatch }}>
-                  <span className="card-dot" style={{ background: d.dot }} />
+                <div className="card-swatch">
+                  <img
+                    src={d.image}
+                    alt={d.title}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      display: "block",
+                    }}
+                  />
                 </div>
                 <div className="card-body">
                   <p className="card-title">{d.title}</p>
@@ -192,11 +158,10 @@ export default function Home() {
           </div>
 
           <div className="note">
-            <strong>Note:</strong> these tiles are placeholder swatches so the
-            layout is ready to go. Drop your own photos into{" "}
-            <code>/public</code> and swap each card's <code>swatch</code>{" "}
-            value for an <code>&lt;img /&gt;</code> pointing at your file to
-            replace them with real nail art photos.
+            <strong>Note:</strong> want to add or swap photos? Upload new
+            images into <code>/public</code> on GitHub, then add or edit
+            entries in the <code>designs</code> list at the top of{" "}
+            <code>app/page.js</code> to point at the new filenames.
           </div>
         </div>
       </section>
