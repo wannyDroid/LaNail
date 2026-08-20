@@ -465,6 +465,8 @@ a {
 .card-swatch {
   aspect-ratio: 4 / 5;
   position: relative;
+  overflow: hidden;
+  background: #f0ece5;
 }
 
 .card-dot {
