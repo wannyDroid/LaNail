@@ -156,13 +156,15 @@ export default function Home() {
               </div>
             ))}
           </div>
-
+{/*
           <div className="note">
             <strong>Note:</strong> want to add or swap photos? Upload new
             images into <code>/public</code> on GitHub, then add or edit
             entries in the <code>designs</code> list at the top of{" "}
             <code>app/page.js</code> to point at the new filenames.
           </div>
+
+*/}
         </div>
       </section>
 
